@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_12sdp">
+
+
+                        <com.oozeetech.bizdesk.widget.DTextView
+                            android:id="@+id/txtPartyName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Party Name"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/_16sdp" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.4dp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:background="#f29e9d9e" />
+
+
+                        <com.oozeetech.bizdesk.widget.DTextView
+                            android:id="@+id/txtCustomerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:layout_weight="1"
+                            android:text="Customer name: xyz"
+                            android:textSize="@dimen/_13sdp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_100sdp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imgDiamond"
+                                    android:layout_width="@dimen/_60sdp"
+                                    android:layout_height="@dimen/_60sdp"
+                                    android:tint="@color/diamondGreen"
+                                    app:srcCompat="@drawable/ic_diamond" />
+
+                                <com.oozeetech.bizdesk.widget.DTextView
+                                    android:id="@+id/txtPolished"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="Polished "
+                                    android:textSize="@dimen/_13sdp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/_13sdp"
+                                android:gravity="right"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <com.oozeetech.bizdesk.widget.DTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Payment Amount"
+                                        android:textColor="@color/colorTextBlue"
+                                        android:textSize="@dimen/_13sdp" />
+
+                                    <com.oozeetech.bizdesk.widget.DTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=": "
+                                        android:textColor="@color/colorTextBlue"
+                                        android:textSize="@dimen/_13sdp" />
+
+                                    <com.oozeetech.bizdesk.widget.DTextView
+                                        android:id="@+id/txtBrokerageAmt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="1"
+                                        android:text="$200"
+                                        android:textSize="@dimen/_13sdp" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <com.oozeetech.bizdesk.widget.DTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Payment Receipt"
+                                        android:textColor="@color/colorTextBlue"
+                                        android:textSize="@dimen/_13sdp" />
+
+                                    <com.oozeetech.bizdesk.widget.DTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=": "
+                                        android:textColor="@color/colorTextBlue"
+                                        android:textSize="@dimen/_13sdp" />
+
+                                    <com.oozeetech.bizdesk.widget.DTextView
+                                        android:id="@+id/txtBrokerageReceipt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="1"
+                                        android:text="$200"
+                                        android:textSize="@dimen/_13sdp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="@dimen/_4sdp"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <com.oozeetech.bizdesk.widget.DTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Payment Outstanding"
+                                        android:textColor="@color/colorTextBlue"
+                                        android:textSize="@dimen/_13sdp" />
+
+                                    <com.oozeetech.bizdesk.widget.DTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=": "
+                                        android:textColor="@color/colorTextBlue"
+                                        android:textSize="@dimen/_13sdp" />
+
+                                    <com.oozeetech.bizdesk.widget.DTextView
+                                        android:id="@+id/txtBrokerageOutstanding"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:maxLines="1"
+                                        android:text="$200"
+                                        android:textSize="@dimen/_13sdp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.4dp"
+                            android:layout_marginBottom="@dimen/_4sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:background="#f29e9d9e" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:orientation="horizontal">
+
+                            <com.oozeetech.bizdesk.widget.DTextView
+                                android:id="@+id/txtSaleDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Jan 30, 2017"
+                                android:textColor="@color/colorTextBlack"
+                                android:textSize="@dimen/_13sdp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <com.oozeetech.bizdesk.widget.DTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Due Days: "
+                                    android:textColor="@color/colorTextGreen"
+                                    android:textSize="@dimen/_13sdp" />
+
+                                <com.oozeetech.bizdesk.widget.DTextView
+                                    android:id="@+id/txtDueDays"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="right"
+                                    android:gravity="center"
+                                    android:text="2 "
+                                    android:textColor="@color/colorTextGreen"
+                                    android:textSize="@dimen/_13sdp" />
+
+                            </LinearLayout>
+
+                            <com.oozeetech.bizdesk.widget.DTextView
+                                android:id="@+id/txtPaymentDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Jan 30, 2017"
+                                android:textColor="@color/colorTextBlack"
+                                android:textSize="@dimen/_13sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/btnAddReceipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@color/colorPrimary">
+
+                    <com.oozeetech.bizdesk.widget.DTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary"
+                        android:drawableRight="@drawable/ic_plus_"
+                        android:drawableTint="@color/colorWhite"
+                        android:gravity="center"
+                        android:padding="@dimen/_12sdp"
+                        android:text="Payment Receipt"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_16sdp" />
+
+                    <!--<ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_plus"
+                        android:tint="@color/colorWhite" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.oozeetech.bizdesk.widget.DTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:padding="@dimen/_12sdp"
+                        android:text="Total Amount"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.oozeetech.bizdesk.widget.DTextView
+                        android:id="@+id/txtTotalAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/_12sdp"
+                        android:text="$ 65"
+                        android:textColor="@color/colorTextGray"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/lstOutstandingReceipt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.oozeetech.bizdesk.widget.DTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:padding="@dimen/_12sdp"
+                        android:text="Outstanding Payment"
+                        android:textColor="@color/colorTextRed"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <com.oozeetech.bizdesk.widget.DTextView
+                        android:id="@+id/txtOutstandingPayment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:padding="@dimen/_12sdp"
+                        android:text="$ 56"
+                        android:textColor="@color/colorTextRed"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.oozeetech.bizdesk.widget.DButton
+            android:id="@+id/btnSettledBrokerage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/_12sdp"
+            android:text="Settled Payment"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </LinearLayout>
+</LinearLayout>
+

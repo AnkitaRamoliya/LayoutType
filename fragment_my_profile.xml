@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_13sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.oozeetech.bizdesk.widget.DEditText
+            android:id="@+id/edFullName"
+            style="@style/txt_txt_primary_16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_myprofile_"
+            android:drawablePadding="@dimen/_12sdp"
+            android:hint="Full Name"
+            android:maxLines="1"
+            android:padding="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/imgEditFullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12sdp"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_pencil" />
+    </LinearLayout>
+
+    <com.oozeetech.bizdesk.widget.DTextView
+        android:id="@+id/txtEmailId"
+        style="@style/txt_txt_primary_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableLeft="@drawable/ic_email_"
+        android:drawablePadding="@dimen/_12sdp"
+        android:gravity="center_vertical"
+        android:hint="Email"
+        android:padding="@dimen/_12sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.oozeetech.bizdesk.widget.DEditText
+            android:id="@+id/edMobileNumber"
+            style="@style/txt_txt_primary_16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_call_"
+            android:drawablePadding="@dimen/_12sdp"
+            android:hint="Mobile number"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:padding="@dimen/_12sdp" />
+
+        <ImageView
+            android:id="@+id/imgEditMobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12sdp"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/ic_pencil" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/btnChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#606060"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@color/colorWhite"
+                app:srcCompat="@drawable/ic_lock" />
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp"
+                android:text="Change Password"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15sdp" />
+        </LinearLayout>
+
+        <com.oozeetech.bizdesk.widget.DButtonMaterial
+            android:id="@+id/btnLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_4sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:id="@+id/txtPartyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="Party Name"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="July 20, 2017"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/_12sdp" />
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:id="@+id/txtAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:maxLines="1"
+                android:paddingRight="@dimen/_4sdp"
+                android:text=" 6262"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="#f29e9d9e" />
+    </LinearLayout>
+</LinearLayout>

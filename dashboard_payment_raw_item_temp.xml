@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_12sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:id="@+id/txtPartyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Party Name"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/_16sdp" />
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jan 29, 2017"
+                android:textSize="@dimen/_12sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <com.oozeetech.bizdesk.widget.DTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Date : "
+                    android:textSize="@dimen/_13sdp" />
+
+                <com.oozeetech.bizdesk.widget.DTextView
+                    android:id="@+id/txtPaymentDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Feb 01, 2017"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <com.oozeetech.bizdesk.widget.DTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="Due Days: "
+                    android:textColor="@color/colorTextGreen"
+                    android:textSize="@dimen/_13sdp" />
+
+                <com.oozeetech.bizdesk.widget.DTextView
+                    android:id="@+id/txtDueDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text=" 3"
+                    android:textColor="@color/colorTextGreen"
+                    android:textSize="@dimen/_13sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:orientation="horizontal">
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Outstanding : "
+                android:textColor="@color/colorTextBlue"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:id="@+id/txtCurrencySymbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ "
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:id="@+id/txtPaymentOutstanding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="700"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

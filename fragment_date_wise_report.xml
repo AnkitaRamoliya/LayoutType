@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ltheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mdtp_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp">
+
+        <com.oozeetech.bizdesk.widget.DTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Party Name "
+            android:textColor="@color/colorTextGray"
+            android:textSize="@dimen/_13sdp" />
+
+        <com.oozeetech.bizdesk.widget.DTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" Date "
+            android:textColor="@color/colorTextGray"
+            android:textSize="@dimen/_13sdp" />
+
+        <com.oozeetech.bizdesk.widget.DTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=" Amount "
+            android:textColor="@color/colorTextGray"
+            android:textSize="@dimen/_13sdp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lstPartyPayment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/llNoRecordFound"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@color/colorTextRed"
+            app:srcCompat="@drawable/ic_warning" />
+
+        <com.oozeetech.bizdesk.widget.DTextView
+            style="@style/txt_primary_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="No records found" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mdtp_white"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp">
+
+        <com.oozeetech.bizdesk.widget.DTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Total : "
+            android:textColor="@color/colorTextGray"
+            android:textSize="@dimen/_13sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" ₹ "
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:id="@+id/txtINRAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text=" INR "
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:orientation="horizontal">
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" $ "
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/_13sdp" />
+
+            <com.oozeetech.bizdesk.widget.DTextView
+                android:id="@+id/txtUSDAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text=" USD "
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/_13sdp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:orientation="horizontal">
+
+        <com.oozeetech.bizdesk.widget.DTextView
+            android:id="@+id/txtSizeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="95 Crt"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/_13sdp" />
+
+        <com.oozeetech.bizdesk.widget.DTextView
+            android:id="@+id/txtCrt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="58 Cut"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/_13sdp" />
+
+        <com.oozeetech.bizdesk.widget.DTextView
+            android:id="@+id/txtPricePerCrt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:text="22 R/crt"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/_13sdp" />
+    </LinearLayout>
+</LinearLayout>
